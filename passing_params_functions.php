@@ -19,12 +19,12 @@
 
   <?php
 
-  function add_numbers($number1, $number2) {
+  function addNumbers($number1, $number2) {
     $sum = $number1 + $number2;
     echo $sum;
   }
 
-  add_numbers(48, 48);
+  addNumbers(48, 48);
 
   ?>
 </body>

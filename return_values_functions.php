@@ -11,7 +11,18 @@
   <?php
     function addNumbers($number1, $number2) {
       $sum = $number1 + $number2;
+
+      return $sum; // return takes data from the function
     }
+
+    $result = addNumbers(34, 42); // stores the returned value in a variable
+
+    // echo $result;
+
+    $result = addNumbers(100, $result);
+
+    echo $result;
+
   ?>
 
 </body>
