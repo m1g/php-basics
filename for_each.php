@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dynamic Text</title>
+  <title>For Each</title>
 </head>
 <body>
 
   <?php
 
-  $title = "Miguel Malcolm Official Site";
+  $numbers = [345, 345, 676, 789, 232];
 
-   ?>
+  // foreach works with arrays. numbers is the array and it assigns a value to each number
 
-<h1><?php echo $title; ?></h1>
+  foreach($numbers as $number) {
+    echo $number . "<br>";
+  }
+
+  ?>
 
 </body>
 </html>

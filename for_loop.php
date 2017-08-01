@@ -4,17 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dynamic Text</title>
+  <title>For Loops</title>
 </head>
 <body>
-
   <?php
 
-  $title = "Miguel Malcolm Official Site";
+  for($counter = 0; $counter < 10; $counter++) {
+    echo $counter . "<br>";
+  }
 
-   ?>
-
-<h1><?php echo $title; ?></h1>
-
+  ?>
 </body>
 </html>

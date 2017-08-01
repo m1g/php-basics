@@ -4,17 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dynamic Text</title>
+  <title>Functions</title>
 </head>
 <body>
 
   <?php
 
-  $title = "Miguel Malcolm Official Site";
+  function init() {
+    say_something();
+    echo "<br>";
+    calculate();
+  }
 
-   ?>
+  function calculate() {
+    echo 796 + 875;
+  }
 
-<h1><?php echo $title; ?></h1>
+  function say_something() {
+    echo "Hello Maestro";
+  }
+
+  init();
+
+  ?>
 
 </body>
 </html>

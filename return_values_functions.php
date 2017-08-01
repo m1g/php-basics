@@ -4,17 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dynamic Text</title>
+  <title>Functions: Returning Values</title>
 </head>
 <body>
 
   <?php
-
-  $title = "Miguel Malcolm Official Site";
-
-   ?>
-
-<h1><?php echo $title; ?></h1>
+    function addNumbers($number1, $number2) {
+      $sum = $number1 + $number2;
+    }
+  ?>
 
 </body>
 </html>
