@@ -8,6 +8,18 @@ function createRows() {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
+    $username = mysqli_real_escape_string($connection, $username); // privacy feature: prevents sql injections
+    $password = mysqli_real_escape_string($connection, $password);
+
+    // pass encrypt
+    $hashFormat = "$2y$10$"; // hashes 10x
+    $salt = "iusesomecrazystrings22";
+    $hashF_and_salt = $hashFormat . $salt;
+
+    $password = crypt($password, $hashF_and_salt);
+    // end encrypt
+
+
     $query = "INSERT INTO users(username, password) "; // inserts into table in database
     $query .= "VALUES('$username', '$password')"; // concatenates the variable. uses quotes because it's strings
 
