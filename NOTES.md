@@ -15,3 +15,8 @@ An example object is a **Car** :
   * Move Wheels
   * Move Seats
   * Turn on Radio
+
+
+# Constructors
+
+A constructor is called by classes so it is suitable for any initialization that the object may need before it is used. I.e., validations and ensuring data is present
